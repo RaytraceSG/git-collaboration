@@ -43,7 +43,7 @@ data "aws_iam_policy_document" "inline_policy_cloudwatch" {
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
-  name               = "iam_for_group3_lambda"
+  name               = "iam_for_group3_azmi1_test_lambda"
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
 
   inline_policy {
